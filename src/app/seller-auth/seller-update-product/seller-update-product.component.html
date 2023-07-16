@@ -1,0 +1,36 @@
+<br><br>
+
+  <div class="formWarper">
+
+    <h1 class="text-center">Update Product</h1>
+    <br>
+    <p class="p-message"><b>{{successMessage}}</b></p>
+
+  <form name="myForm" #updateProd="ngForm" (ngSubmit)="updateProduct(updateProd.value)">
+    
+    <input class="from-input" type="text" name="name" ngModel="{{productData?.name}}" placeholder="Enter Product Name" required>
+
+    <input class="from-input" type="text" name="size" ngModel="{{productData?.size}}" placeholder="Enter Product Size" required>
+    
+    <input class="from-input" type="text" name="color" ngModel="{{productData?.color}}" placeholder="Enter Product Color" required>
+
+    <input class="from-input" type="text" name="price" ngModel="{{productData?.price}}" placeholder="Enter Product Price" required>
+
+    <input class="from-input" type="text" name="category" ngModel="{{productData?.category}}" placeholder="Enter Product Category" required>
+
+    <input class="from-input" type="text" name="brand" ngModel="{{productData?.brand}}" placeholder="Enter Product Brand" required>
+
+    <input class="from-input" type="text" name="image" ngModel="{{productData?.image}}" placeholder="Enter Product Image" required>
+
+    <textarea class="from-input" type="text" name="discription" ngModel="{{productData?.discription}}" placeholder="Enter Product Discription" required>
+
+    </textarea>
+
+    <button>Update Product</button>
+
+  </form>
+
+  </div>
+
+  <br>
+  <br>

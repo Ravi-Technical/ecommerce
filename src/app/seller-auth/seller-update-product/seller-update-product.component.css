@@ -1,0 +1,27 @@
+
+
+  h1 { text-align: center;}
+
+  .formWarper input, .formWarper textarea {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 10px 9px;
+    width: 30%;
+}
+
+.formWarper button {
+  text-align: center;
+  margin: auto;
+  display: block;
+  padding: 10px 20px;
+  border: none;
+  background: #551a8b;
+  margin-top: 1rem;
+  color: #fff;width: 31.5%;
+  border-radius: 2px;
+}
+
+.p-message{ text-align: center;
+  color: green;
+}

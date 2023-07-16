@@ -1,0 +1,41 @@
+
+
+.signUp-from input { width: 93%;
+    padding: 10px;display: flex;
+    flex-direction: column;
+    margin: 20px 0px}
+
+    .signUp-from {
+        margin: auto;
+        display: block;
+        width: 25%;
+    }
+    
+    .signUp-from button {
+        width: 100%;cursor: pointer;
+        padding: 10px 0;
+        background: #1c5bb9;
+        border: none;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .signUp-from p {
+      margin-top: 10px;
+      font-weight: 500;
+  }
+  
+  .signUp-from a {
+    text-decoration: auto;
+    color: #185fc9;
+    cursor: pointer;
+    border-bottom: 1px solid;
+}
+
+
+.signUp-from h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 3rem;
+  color: #555;font-weight: bold;
+}

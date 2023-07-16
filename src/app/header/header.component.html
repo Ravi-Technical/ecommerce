@@ -1,0 +1,36 @@
+<section class="header-wraper">
+    <div class="container">
+        <nav class="nav">
+            <h1><a routerLink="/">E-Comm</a></h1>
+            <div class="search-bar" *ngIf="menuType==='default'">
+                <input type="text" placeholder="Search E-Comm Products">
+                <div class="icon-wrap"><button class="btn-search"></button></div>
+            </div>
+            <div [ngSwitch]="menuType" class="menu-items">
+
+                <ul *ngSwitchCase="'default'">
+                    <li><a routerLink="">Home</a></li>
+                    <li><a routerLink="/seller-auth">Become a Seller</a></li>
+                    <li><a routerLink="/shop">Shop</a></li>
+                    <li><a routerLink="/user-auth">Login</a></li>
+                    <li><a routerLink="">Cart(0)</a></li>
+                </ul>
+
+                <ul *ngSwitchCase="'seller'">
+                    <li><a routerLink="/seller-home">All Products</a></li>
+                    <li><a routerLink="/seller-add-product">Add Product</a></li>
+                    <li><a (click)="logOut()">Logout</a></li>
+                    <li><a>{{sellerName }}</a></li>
+                </ul>
+
+                <ul *ngSwitchCase="'user'">
+                    <!-- <li><a routerLink="/seller-home">All Products</a></li>
+                    <li><a routerLink="/seller-add-product">Add Product</a></li> -->
+                    <li><a (click)="userLogOut()">Logout</a></li>
+                    <li><a>{{userName }}</a></li>
+                </ul>
+
+            </div> 
+        </nav>
+    </div>
+</section>

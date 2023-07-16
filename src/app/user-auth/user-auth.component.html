@@ -1,0 +1,34 @@
+ 
+  <div class="signUp-from" *ngIf="!hideShow">
+    <h1>User SignUp</h1>
+    <form #signUp="ngForm" (ngSubmit)="signupForm(signUp.value)">
+        <input type="text" ngModel name="name" placeholder="Name">
+        <input type="text" ngModel name="email" placeholder="Email">
+        <input type="text" ngModel name="mobile" placeholder="Mobile">
+        <input type="text" ngModel name="password" placeholder="Password">
+        <button class="btn"> SignUp </button>
+    </form>
+    <p>If already have an account? <a (click)="alreadyAccount()">Click Here</a></p>
+  </div>
+
+  <div class="signUp-from" *ngIf="hideShow">
+    <h1>User Login</h1>
+    <p class="errMsg">{{errMsg}}</p>
+
+    <form #login="ngForm" (ngSubmit)="loginForm(login.value)">
+
+        <input type="text" ngModel name="email" #email="ngModel" placeholder="Email" required>
+        
+        <span class="errMsg" *ngIf="email.invalid && email.touched">Please enter email address</span>
+
+        <input type="text" ngModel name="password"  #password="ngModel" placeholder="Password">
+        
+        <span class="errMsg" *ngIf="password.invalid && password.touched">Please enter password</span>
+
+        <button class="btn disabled"> Login </button>
+
+    </form>
+
+    <p>Don't have an account? <a (click)="notAccount()">Click Here</a></p>
+  </div>
+    

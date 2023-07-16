@@ -1,0 +1,113 @@
+<section class="trending-products">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="filter-wraper">
+                    <h2>Filters</h2>
+                    <h4 class="clearFilters" (click)="clearFilter()">Clear Filters</h4>
+                    <hr>
+                    <div class="priceFilter">
+                        <h4>Category </h4>
+                        <ul>
+                            <li *ngFor="let cat of categories | slice:0:8;">
+                                <label>
+                                    <input type="checkbox" value="{{cat}}" (click)="getCat($event)" placeholder="Category">{{cat}}
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="priceFilter">
+                        <h4>Price </h4>
+                        <ngx-slider [(ngModel)]="sliderRangeValues" [(value)]="lessValue" [(highValue)]="highValue"
+                            [options]="options" (click)="handlePrice()"></ngx-slider>
+                    </div>
+                    <br>
+                    <div class="priceFilter">
+                        <h4>Brands </h4>
+                        <input class="searc-brand" [(ngModel)]="search" type="text" placeholder="Search Brand">
+                        <ul>
+                            <li *ngFor="let brand of productBrands | filter:search | slice:0:5;">
+                                <label><input type="checkbox" value="{{brand}}" (click)="getBrand($event)">
+                                    {{brand}} </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="priceFilter">
+                        <h4>Size </h4>
+                        <ul>
+                            <li *ngFor="let size of productSize">
+                                <label><input type="checkbox">
+                                    {{size}} </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="sortBy">
+                        <h3>Sort By</h3>
+                    </div>
+                    <div class="card col-md-3" *ngFor="let item of ProductsList " style="width: 15rem;">
+                        <a routerLink="/">
+                            <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">{{item.name}}</h5>
+                                <h6>${{item.price}} || {{item.category}} || {{item.brand}} </h6>
+
+                                <!-- <a routerLink="/" class="btn btn-primary">Buy Now</a>
+                        <a routerLink="/" class="btn btn-primary">Add to Cart</a> -->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text-center length0" *ngIf="ProductsList.length==0">Product Not Found</div>
+                </div>
+            </div>
+
+            <!-- <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<br><br><br>

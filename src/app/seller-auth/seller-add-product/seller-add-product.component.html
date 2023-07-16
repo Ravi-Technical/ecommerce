@@ -1,0 +1,30 @@
+<br><br>
+  <div class="formWarper">
+    
+  <h1 class="text-center">Add Product</h1>
+
+  <form #addProd="ngForm" (ngSubmit)="addProduct(addProd.value)">
+    
+    <input class="from-input" type="text" name="name" ngModel placeholder="Enter Product Name" required>
+
+    <input class="from-input" type="text" name="size" ngModel placeholder="Enter Product Size" required>
+    
+    <input class="from-input" type="text" name="color" ngModel placeholder="Enter Product Color" required>
+
+    <input class="from-input" type="text" name="price" ngModel placeholder="Enter Product Price" required>
+
+    <input class="from-input" type="text" name="category" ngModel placeholder="Enter Product Category" required>
+
+    <input class="from-input" type="text" name="brand" ngModel placeholder="Enter Product Brand" required>
+
+    <input class="from-input" type="text" name="image" ngModel placeholder="Enter Product Image" required>
+
+    <textarea class="from-input" type="text" name="discription" ngModel placeholder="Enter Product Discription" required>
+
+    </textarea>
+
+    <button>Add Product</button>
+
+  </form>
+
+  </div>
