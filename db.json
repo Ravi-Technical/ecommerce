@@ -1,0 +1,176 @@
+{
+  "seller": [
+    {
+      "name": "Ravi Technical",
+      "email": "ravi@gmail.com",
+      "password": "test@123",
+      "id": 1
+    },
+    {
+      "name": "R.S Technical",
+      "email": "rs@gmail.com",
+      "password": "rst@123",
+      "id": 2
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "name": "Kids Toys test",
+      "size": "Below 5 years",
+      "color": "Skyblue,Red,Green,Blue,Yellow",
+      "price": "400",
+      "category": "Toys",
+      "brand": "U.S. Polo",
+      "image": "https://au.hotnojo.com/public//assets/front/images/rent.jpg",
+      "discription": "Kids toys",
+      "id": 1
+    },
+    {
+      "name": "UV Protection Shield Sunglasses",
+      "size": "Free Size",
+      "color": "Skyblue,Red,Green,Blue,Yellow",
+      "price": "250",
+      "category": "Cloth",
+      "brand": "Levis",
+      "image": "https://au.hotnojo.com/public//assets/front/images/category-11.jpg",
+      "discription": "UV Protection Shield Sunglasses",
+      "id": 2
+    },
+    {
+      "name": "Mobile Accessories",
+      "size": "All Device",
+      "color": "Skyblue,Red,Green,Blue,Yellow",
+      "price": "322",
+      "category": "Electronics",
+      "brand": "Lee",
+      "image": "https://au.hotnojo.com/public//assets/front/images/category-15.webp",
+      "discription": "Mobile Accessories",
+      "id": 3
+    },
+    {
+      "name": "Pet Animal",
+      "size": "All age",
+      "color": "Skyblue,Red,Green,Blue,Yellow",
+      "price": "656",
+      "category": "Laptop",
+      "brand": "John plyer",
+      "image": "https://au.hotnojo.com/public//assets/front/images/pet.png",
+      "discription": "Pet Animal",
+      "id": 4
+    },
+    {
+      "name": "Mobile Cover For All Device",
+      "size": "All phone",
+      "color": "Skyblue,Red,Green,Blue,Yellow",
+      "price": "250",
+      "category": "Watch",
+      "brand": "Wranglar",
+      "image": "https://au.hotnojo.com/public//assets/front/images/category-12.jpg",
+      "discription": "Mobile Cover",
+      "id": 5
+    },
+    {
+      "name": "Brand Test",
+      "size": "M",
+      "color": "Yello",
+      "price": "3434",
+      "category": "Test",
+      "brand": "Oppo Brand",
+      "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/n/p/r/m-mbbd22cnpo3001h-metronaut-original-imaghmk22gycwfck.jpeg?q=70",
+      "discription": "fdgfdfdgfg",
+      "id": 6
+    }
+  ],
+  "category": [
+    "Toys",
+    "Cloth",
+    "Electronics",
+    "Laptop",
+    "smartphones",
+    "Watch",
+    "fragrances",
+    "skincare",
+    "groceries",
+    "home-decoration",
+    "furniture",
+    "tops",
+    "womens-dresses",
+    "womens-shoes",
+    "mens-shirts",
+    "mens-shoes",
+    "mens-watches",
+    "womens-watches",
+    "womens-bags",
+    "womens-jewellery",
+    "sunglasses",
+    "automotive",
+    "motorcycle",
+    "lighting"
+  ],
+  "userSignUp": [
+    {
+      "name": "Ravi Technical",
+      "email": "ravi@gmail.com",
+      "mobile": "2132432424",
+      "password": "test@123",
+      "id": 1
+    },
+    {
+      "Name": "Testing User",
+      "Email": "test@gmail.com",
+      "Mobile": "8127599046",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "Name": "User SignUp",
+      "Email": "user@gmail.com",
+      "Mobile": "12234",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "name": "Ravi",
+      "email": "test@gmail.com",
+      "mobile": "08127599046",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "name": "xvcxvc",
+      "email": "vcxvcxvcv",
+      "mobile": "cxvcxvcx",
+      "password": "vcxv",
+      "id": 5
+    },
+    {
+      "name": "bfbb",
+      "email": "bvb",
+      "mobile": "b",
+      "password": "bvnbn",
+      "id": 6
+    },
+    {
+      "name": "ffdg",
+      "email": "fdgfd",
+      "mobile": "gdgd",
+      "password": "g",
+      "id": 7
+    }
+  ],
+  "brands": [
+    "U.S. Polo",
+    "Levis",
+    "Lee",
+    "John plyer",
+    "Wranglar",
+    "Arrow",
+    "Bata"
+  ]
+}
